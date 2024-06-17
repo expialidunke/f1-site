@@ -1,0 +1,144 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .galleryy .row > .column {
+    padding: 1vw;
+  }
+  
+  .galleryy .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .galleryy .column {
+    float: left;
+    width: 25%;
+  }
+  .gallerybackground {
+    margin: 1vw;
+  }
+  .gallerybackground img {
+    border-radius: 1vw;
+  }
+  /* The Modal (background) */
+  .galleryy .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0vw;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .galleryy .modal-content {
+    position: relative;
+    background-color: #000000;
+    margin: auto;
+    padding: 0;
+    width: 85%;
+  }
+  
+  /* The Close Button */
+  .galleryy .close {
+    color: white;
+    position: absolute;
+    top: 0.5vw;
+    right: 1vw;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  
+  .galleryy .close:hover,
+  .galleryy .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .galleryy .mySlides {
+    display: none;
+  }
+  
+  .galleryy .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .galleryy .gprev,
+  .galleryy .gnext {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1.5vw;
+    margin-top: -4vw;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 0.3vw 0.3vw 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .galleryy .gnext {
+    right: 0;
+    border-radius: 0.3vw 0 0 0.3vw;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .galleryy .gprev:hover,
+  .galleryy .gnext:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .galleryy .numbertext {
+    color: #f2f2f2;
+    font-size: 1vw;
+    padding: 1vw 1vw;
+    position: absolute;
+    top: 0;
+  }
+  
+  .galleryy img {
+    margin-bottom: 0vw;
+    width: 100%;
+  }
+  
+  .galleryy .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 1vw 1vw 3vw 1vw;
+    color: white;
+    font-size: 2vw;
+  }
+  
+  .galleryy .demo {
+    opacity: 0.6;
+  }
+  
+  .galleryy .active,
+  .galleryy .demo:hover {
+    opacity: 1;
+  }
+  
+  .galleryy img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .galleryy .hover-shadow:hover {
+    box-shadow: 0 0.4vw 0.8vw 0 rgba(0, 0, 0, 0.2), 0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+  }
